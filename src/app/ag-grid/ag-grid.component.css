@@ -1,0 +1,18 @@
+/* my-table.component.css */
+
+.custom-table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /
+  }
+  
+  td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+  }
+  
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  

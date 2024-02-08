@@ -1,0 +1,13 @@
+<!-- ag-grid.component.html -->
+<table class="custom-table">
+  <tbody>
+    <tr *ngFor="let name of names; let i = index">
+      <td>
+        <p>columns</p>
+        <input [(ngModel)]="name.value" type="text" placeholder="Saisir la valeur">
+        <button (click)="updateName(name, i)">Mettre à jour</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

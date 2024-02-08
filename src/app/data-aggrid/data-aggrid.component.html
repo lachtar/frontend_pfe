@@ -1,0 +1,33 @@
+<!-- data-aggrid.component.html -->
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th *ngFor="let name of names">{{ name }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td *ngFor="let name of names; let i = index">
+        <input
+          type="text"
+          placeholder="Saisir la valeur"
+          [(ngModel)]="inputValues[i]"
+          (input)="updateInputValue($event, i)"
+        />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="onSubmit()">Submit</button>
+
+
+
+
+
+
+
+
+
+
+
